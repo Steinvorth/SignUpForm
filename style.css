@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#parent-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+#image{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border: 2px solid red;
+}
+
+#signup{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    border: 2px solid red;
+}
