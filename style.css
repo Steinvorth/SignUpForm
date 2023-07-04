@@ -3,23 +3,33 @@
     padding: 0;
 }
 
+body, html{
+    height: 100%;
+}
+
 #parent-cont{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 35% 65%;
     height: 100%;
     width: 100%;
 }
 
-#image{
+#image {
+    flex: 35%;
     height: 100%;
+    position: relative;
+}
+
+#image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: blue;
-    border: 2px solid red;
+    height: 100%;
+    object-fit: cover;
 }
 
 #signup{
     height: 100%;
     width: 100%;
-    background-color: red;
-    border: 2px solid red;
 }
