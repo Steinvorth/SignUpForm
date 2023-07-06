@@ -30,6 +30,21 @@ body, html{
 }
 
 #signup{
+    display: grid;
+    grid-template-rows: 30% 40% 30%;
     height: 100%;
     width: 100%;
 }
+
+#signup > .top{
+    border: 2px solid red;
+}
+
+#signup > .mid{
+    border: 2px solid blue;
+}
+
+#signup > .low{
+    border: 2px solid green;
+}
+
