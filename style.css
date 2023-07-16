@@ -37,14 +37,57 @@ body, html{
 }
 
 #signup > .top{
-    border: 2px solid red;
+    background-color: #f7f7f7;
 }
 
-#signup > .mid{
-    border: 2px solid blue;
+.text > p{
+    margin: 5%;
+    font-size: 24px;
+    text-align: left;
+}
+
+#signup > .mid {
+    background-color: white;
+    position: relative; /* Add position relative to the .mid container */
+}
+
+#signup > .mid::before,
+#signup > .mid::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px; /* Adjust the height of the shadow */
+    background: rgba(0, 0, 0, 0.005);
+}
+
+#signup > .mid::before {
+    top: -10px; /* Shadow on the top side */
+}
+
+#signup > .mid::after {
+    bottom: -10px; /* Shadow on the bottom side */
 }
 
 #signup > .low{
-    border: 2px solid green;
+    background-color: #f7f7f7;
 }
 
+.action > button{
+    margin-top: 2%;
+    margin-left: 3%;
+    background-color: darkolivegreen;
+    color: #f7f7f7;
+    width: 15vw;
+    height: 4vh;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border: transparent;
+}
+
+.action > p{
+    margin-top: 5%;
+    margin-left: 3%;
+}
