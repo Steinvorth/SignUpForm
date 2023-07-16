@@ -87,7 +87,16 @@ body, html{
     border: transparent;
 }
 
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content; /* Set rows to fit content */
+    gap: 10px;
+    padding: 10px;
+    margin: 1%;
+}
+
 .action > p{
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 3%;
 }
