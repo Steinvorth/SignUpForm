@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body, html{
@@ -27,6 +29,27 @@ body, html{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;    
+    top: 20%;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay img {
+    margin-top: 5%;
+    max-width: 230px;
+    max-height: 230px;
+    align-self: center;
+    object-fit: contain;
 }
 
 #signup{
@@ -88,12 +111,51 @@ body, html{
 }
 
 .form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: min-content; /* Set rows to fit content */
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     padding: 10px;
     margin: 1%;
+}
+
+.formTxt{
+    padding-left: 10px;
+}
+
+.form > .divTop,
+.form > .divMid,
+.form > .divLow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.form > .divTop > div,
+.form > .divMid > div,
+.form > .divLow > div {
+    flex: 1;
+    margin-right: 100px; 
+    margin-top: 12px;
+}
+
+.form > .divTop > div:last-child,
+.form > .divMid > div:last-child,
+.form > .divLow > div:last-child {
+    margin-right: 0;
+}
+
+.form label {
+    font-size: 16px;
+}
+
+.form input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    font-size: 12px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
 }
 
 .action > p{
