@@ -34,7 +34,7 @@ body, html{
     position: absolute;
     width: 100%;
     background: black;
-    opacity: 0.6;
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     top: 8rem;
     text-align: center;
@@ -49,6 +49,7 @@ body, html{
 
 .objs > p{
     font-size: 100px;
+    font-family: 'Voltaire', sans-serif;
 }
 
 .objs > .imgOdin {
